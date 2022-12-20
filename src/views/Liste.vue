@@ -1,5 +1,5 @@
 <template>
-<h1>Welcome to Liste</h1>
+  <h1>Welcome to Liste</h1>
 </template>
 
 <script>
@@ -10,5 +10,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
