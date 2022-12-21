@@ -4,7 +4,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col" v-for="item in items" :key="item.id">
         <div class="card h-100">
-          <img :src="getAvatar(item)" class="card-img-top" :alt="item.fullName">
+          <img :src="getAvatar(item)" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">{{ item.fullName }}</h5>
           </div>
@@ -32,12 +32,14 @@ export default {
     }
   },
   mounted () {
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/items'
     const requestOptions = {
+
       method: 'GET',
       redirect: 'follow'
     }
 
-    fetch('https://web-tech-projekt.herokuapp.com/api/v1/items', requestOptions)
+    fetch(endpoint, requestOptions)
       .then(response => response.json())
       .then(result => result.forEach(item => {
         this.items.push(item)
@@ -48,4 +50,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
