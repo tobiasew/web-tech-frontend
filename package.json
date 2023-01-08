@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": "18.x",
-    "npm":  "9.x"
+    "npm": "9.x"
   },
   "scripts": {
     "start": "vue-cli-service serve",
@@ -13,8 +13,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
+    "fetch-mock": "^9.11.0",
+    "popper.js": "^1.16.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
@@ -29,12 +33,16 @@
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "axios": "^1.2.2",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
-    "jest": "^27.0.5"
+    "flush-promises": "^1.0.2",
+    "jest": "^27.0.5",
+    "jest-fetch-mock": "^3.0.3",
+    "vue-jest": "^5.0.0-0"
   }
 }
