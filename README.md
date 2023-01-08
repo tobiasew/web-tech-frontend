@@ -1,3 +1,5 @@
+[![CI](https://github.com/tobiasewald/web-tech-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/tobiasewald/web-tech-frontend/actions/workflows/ci.yml)
+
 # web-tech-frontend
 
 ## Project setup
